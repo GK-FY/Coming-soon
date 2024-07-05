@@ -1,7 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌷 COMING SOON 🌷</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        /* Style for the header */
+        header {
+            background-color: #f9f9f9;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Style for the countdown */
+        .countdown {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        /* Style for the footer */
+        footer {
+            background-color: blue;
+            color: yellow;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Make the text italic */
+        footer em {
+            font-style: italic;
+        }
+    </style>
+    <script>
+        // Countdown timer logic (adjust as needed)
+        const launchDate = new Date('2024-07-30T00:00:00');
+        function updateCountdown() {
+            const now = new Date();
+            const timeLeft = launchDate - now;
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+            document.querySelector('.countdown').textContent = `${days} : ${hours} : ${minutes} : ${seconds}`;
+        }
+        setInterval(updateCountdown, 1000);
+    </script>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <header>
+        <div class="content">
+            <h1>OREEE-<span>SOLAR</span>-INVESTMENT</h1>
+            <h2>COMING SOON</h2>
+          Check the remaining days and hours for the platform to launch:
+            <div class="countdown">00 : 00 : 00 : 00</div>
+        </div>
+    </header>
+    <!-- Your page content here -->
+    <footer><em>@Created By | shank.fy🌷</em></footer>
+    <a href="https://wa.me/GK-FY🌷?text=Hello%20I%20need%20help" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" style="position: fixed; bottom: 20px; right: 20px; width: 60px; height: 60px; border-radius: 50%; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);">
+    </a>
 </body>
 </html>
